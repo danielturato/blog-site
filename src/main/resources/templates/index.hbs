@@ -1,0 +1,24 @@
+{{#partial "title"}}Home{{/partial}}
+
+{{#partial "content"}}
+    <div class="container">
+        <div class ="entry-list">
+            {{#if flashMessage }}
+                <p id="flash-message">{{ flashMessage }}</p>
+            {{/if}}
+            {{#each entries}}
+                <article>
+                    <h2><a href="/{{ slug }}">{{ title }}</a></h2>
+                    <time>{{ dateTime }}</time>
+                    <p></p>
+                    {{#each tags }}
+                        <h4 class="tags"><a href="/tags/{{ this.slug }}">{{ this }}</a></h4>
+                    {{/each}}
+                </article>
+            {{/each}}
+        </div>
+    </div>
+{{/partial}}
+
+
+{{> base.hbs}}

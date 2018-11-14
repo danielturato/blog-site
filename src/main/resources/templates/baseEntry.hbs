@@ -1,0 +1,23 @@
+{{#partial "content" }}
+    <section>
+        <div class="container">
+            <div class="new-entry">
+                <h2>{{#block "titleMethod"}}Blog{{/block}}</h2>
+                <form action="/{{#block "action"}}{{/block}}" method="post">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" value="{{#block "titleValue"}}{{/block}}"><br>
+                    {{#block "tags"}}
+
+                    {{/block}}
+                    <label for="entry">Entry</label>
+                    <textarea name="entry" rows="5">{{#block "textValue"}}{{/block}}</textarea>
+                    <input type="submit" value="{{#block "submitValue"}}{{/block}}" class="button">
+                    <a href="/{{#block "cancel"}}{{/block}}" class="button button-secondary">Cancel</a>
+                    {{#block "delete"}}{{/block}}
+                </form>
+            </div>
+        </div>
+    </section>
+{{/partial}}
+
+{{> base.hbs }}

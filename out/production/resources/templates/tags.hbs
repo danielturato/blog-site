@@ -1,0 +1,15 @@
+{{#partial "title"}}Tags{{/partial}}
+
+{{#partial "content"}}
+    <div class="container">
+        <div class="entry-list">
+            {{#each tags}}
+                <article>
+                    <h2><a href="/tags/{{ slug }}">{{ this }}</a></h2>
+                </article>
+            {{/each}}
+        </div>
+    </div>
+{{/partial}}
+
+{{> base.hbs }}

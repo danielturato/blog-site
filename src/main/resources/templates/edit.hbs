@@ -1,0 +1,16 @@
+{{#partial "titleMethod"}}Edit Entry{{/partial}}
+
+{{#partial "action"}}{{ entry.slug }}/edit{{/partial}}
+
+{{#partial "titleValue"}}{{ entry.title}}{{/partial}}
+{{#partial "textValue" }}{{ entry.text }}{{/partial}}
+
+{{#partial "submitValue"}}Save Entry{{/partial}}
+
+{{#partial "cancel"}}{{ entry.slug }}{{/partial}}
+
+{{#partial "delete"}}
+    <a href="/{{ entry.slug }}/delete" class="button button-secondary delete">Delete Entry</a>
+{{/partial}}
+
+{{> baseEntry.hbs }}

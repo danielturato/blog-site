@@ -1,0 +1,16 @@
+{{#partial "content"}}
+    <div class="container">
+        <div class="entry-list">
+            <article>
+                <h2>{{ entry.title }}</h2>
+                <h4>Are you sure you want to delete this entry?</h4>
+                <form action="/{{ entry.slug }}/delete" method="post">
+                    <input type="submit" value="Yes" class="button">
+                    <a href="/{{ entry.slug }}" class="button button-secondary">No</a>
+                </form>
+            </article>
+        </div>
+    </div>
+{{/partial}}
+
+{{> base.hbs }}

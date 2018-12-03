@@ -1,6 +1,6 @@
-package com.teamtreehouse.blog;
+package com.danielturato.blog;
 
-import com.teamtreehouse.blog.model.*;
+import com.danielturato.blog.model.*;
 import spark.ModelAndView;
 import spark.Request;
 import spark.Response;

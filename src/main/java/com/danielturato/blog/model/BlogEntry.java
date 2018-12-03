@@ -1,4 +1,4 @@
-package com.teamtreehouse.blog.model;
+package com.danielturato.blog.model;
 
 import com.github.slugify.Slugify;
 
